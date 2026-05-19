@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="helix"
+           fetch="https://github.com/ProjectHelixOSS/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/lineage-23.2" />
+
+  <!-- Build  -->
+  <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="helix" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed,sysui-studio" remote="helix" />
+  <project path="build/release" name="android_build_release" groups="pdk,tradefed,sysui-studio" remote="helix" />
+
+  <!-- Android Manifest  -->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="helix" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="helix" />
+
+  <!-- Frameworks  -->
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk,sysui-studio" remote="helix" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="helix" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="helix" />
+
+  <!-- AOSP Packages  -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="helix" />
+
+  <!-- System  -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="helix" />
+
+  <!-- Vendor  -->
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="helix" />
+
+</manifest>
