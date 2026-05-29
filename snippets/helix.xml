@@ -30,11 +30,11 @@
 
   <!-- AOSP Packages  -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="helix" />
-
+  <project path="packages/apps/ColumbusService" name="android_packages_apps_ColumbusService" groups="pdk-fs,sysui-studio" remote="helix" />
   <!-- System  -->
   <project path="system/core" name="android_system_core" groups="pdk" remote="helix" />
 
   <!-- Vendor  -->
   <project path="vendor/lineage" name="android_vendor_lineage" remote="helix" />
-
+  <project path="vendor/fontage" name="android_vendor_fontage" remote="helix" />
 </manifest>
