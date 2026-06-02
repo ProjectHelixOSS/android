@@ -43,7 +43,7 @@
   <project path="system/core" name="android_system_core" groups="pdk" remote="helix" />
 
   <!-- Vendor  -->
-  <project path="vendor/helix" name="android_vendor_helix" remote="helix" />
+  <project path="vendor/lineage" name="android_vendor_helix" remote="helix" />
   <project path="vendor/fontage" name="android_vendor_fontage" remote="helix" />
   <project path="vendor/google/gms" name="vendor_google_gms" remote="gitea" clone-depth="1" />
 </manifest>
