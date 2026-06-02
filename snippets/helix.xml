@@ -8,7 +8,7 @@
            revision="refs/heads/lineage-23.2" />
    
   <!-- GITEA -->
-  <remote name="lfs"
+  <remote name="gitea"
           fetch="https://gitea.com/himanshuksr0007"
           revision="16" />
 
