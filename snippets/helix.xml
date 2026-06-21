@@ -29,9 +29,13 @@
   <project path="build/soong" name="android_build_soong" groups="pdk,tradefed,sysui-studio" remote="helix" />
   <project path="build/release" name="android_build_release" groups="pdk,tradefed,sysui-studio" remote="helix" />
   <project path="lineage-sdk" name="android_lineage-sdk" remote="helix" />
+  
   <!-- Android Manifest  -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="helix" />
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="helix" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="android_device_helix_sepolicy" groups="pdk" remote="helix" />
 
   <!-- Frameworks  -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk,sysui-studio" remote="helix" />
@@ -53,4 +57,5 @@
   <project path="vendor/lineage" name="android_vendor_helix" remote="helix" />
   <project path="vendor/fontage" name="android_vendor_fontage" remote="helix" />
   <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
+  <project path="vendor/helix/prebuilts" name="android_vendor_helix_prebuilts" remote="helix" />
 </manifest>
